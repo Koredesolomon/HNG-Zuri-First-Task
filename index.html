@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Attributes</title>
     <link rel="stylesheet" href="index.css">
-    <script src="time.js"></script>
 </head>
 <body onload="startTime()">
+    <script src="time.js" async defer></script>
         <section class="card">
             <section data-testid="slackDisplayImage" class="slackDisplayImage">
-                <img src="Group 2.png" alt="Solomon Akorede">
+                <img data-testid="slackDisplayImage" src="Group 2.png" alt="Solomon Akorede">
             </section>
-            <section class="userDetails">
-                <h2 data-testid="myTrack" class="myTrack">Frontend Developer</h2>
-                <h1 class="slackUserName">Solomon Akorede</h1>
-                <p class="myTrackDetails">I am an enthusiastic Web Developer passionate about growth in my field. I would love to be an Expert Developer
+            <section class="profileContent">
+                <h1 data-testid="slackUserName" class="slackUserName">Solomon Akorede</h1>
+                <p data-testid="myTrack" class="myTrackDetails">I am an enthusiastic Web Developer passionate about growth in my field. I would love to be an Expert Developer
                     and be a
                     positive contributor to the tech world.
                 </p>
-                <time data-testid="currentUTCTime" id="currentUTCTime"></time>
-                <button data-testid="githubURL" class="githubURL"><a href="https://github.com/Koredesolomon/HNG-Zuri-First-Task" target="_blank">Click here to my Github</a></button>
+                <p data-testid="currentDayOfTheWeek" id="day"></p>
+                <time data-testid="currentUTCTime" id="currentUTCTime">The time is</time>
+                <button data-testid="githubURL" class="githubURL"><a href="https://github.com/Koredesolomon/HNG-Zuri-First-Task" target="_blank">Click here to my Github Profile</a></button>
             </section>
         </section>
 </body>
