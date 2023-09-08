@@ -36,7 +36,7 @@ document.getElementById("day").innerHTML = `Today is ${formattedDate}`;
 function startTime() {
   const today = new Date();
   let x = today.getTime();
-  document.getElementById('currentUTCTime').innerHTML = x;
+  document.getElementById('time').innerHTML = x;
   setTimeout(startTime, 1000);
 }
 
