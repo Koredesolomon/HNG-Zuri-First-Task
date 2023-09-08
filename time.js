@@ -1,7 +1,7 @@
 function startTime() {
   const today = new Date();
-  let x = today.toUTCString();
-  document.getElementById('currentUTCTime').innerHTML = x;
+  let x = today.getTime();
+  document.getElementById('currentUTCTime').innerHTML =`Friday  ${x}`;
   setTimeout(startTime, 1000);
 }
 
